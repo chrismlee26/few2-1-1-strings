@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/@chrisle26/homework-1-strings?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/chrismlee26/few2-1-1-strings?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chrismlee26/few2-1-1-strings?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/chrismlee26/few2-1-1-strings?style=for-the-badge)
 
 For FEW 2.1 (Advanced Javascript) at Make School. Assignment #1.
 
@@ -12,11 +12,11 @@ A library of reusable code that operates on strings. Strings are one of the most
 
 1. Makes the first character of a given string Uppercase.
 2. This makes all characters in a string UPPERCASE.
-3. This Capitalizes The First Letter Of Each Word.
-4. This removes any extra spaces in a string.
+3. This Capitalizes The First Letter Of Each Word in a string.
+4. This removes any --extra spaces and whitespace-- in a string.
 5. This converts a string to kebab-case and sets the string to lowercase.
 6. This converts a string to snake_case and sets the string to lowercase.
-7. Ths converts a strong to camelCase.
+7. Ths converts a string to camelCase.
 8. This takes the first letter of a string and moves it to the end of a string.
 9. This converts a string into a #HashTagString with a maximum of 3 words and capitalizes each word.
 10. This returns true if the string only contains whitespace.
