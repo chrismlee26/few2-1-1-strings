@@ -1,4 +1,4 @@
-console.log("---Challenge 1: Capitalize---")
+console.log("---Challenge 1: Capitalize First Word---")
 function capitalize(str) {
   // Makes the first letter of a given string uppercase
   return str[0].toUpperCase() + str.slice(1);
@@ -42,7 +42,7 @@ console.log("---Challenge 5: Remove Extra Spaces and replace with '-' and lowerc
 function kebobCase(str, sep = "-") {
   const words = str.split(' ')
   const res = words.join(sep)
-  return res
+  return res.toLowerCase();
 }
 
 console.log(kebobCase("Hello world foo bar"))
@@ -72,12 +72,13 @@ function camelCase(str) {
 console.log(camelCase('hello world'))
 
 
-console.log("---Challenge 8: Make the string backwards---")
-function backwardString(str) {
-  return str.split("").reverse().join("");
+console.log("---Challenge 8: Move first character to last---")
+function shiftChar(str) {
+  const firstChar = str.slice(0, 1);
+  return str.slice(1) + firstChar
 }
 
-console.log(backwardString('654 321 dlrow olleh'))
+console.log(shiftChar('dHello Worl'))
 
 
 console.log("---Challenge 9: Hash Tag, First letter cap, No Space, 3 Longest Words only---")
