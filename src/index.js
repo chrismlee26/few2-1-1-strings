@@ -92,11 +92,29 @@ function makeHashTag(str) {
     return b.length - a.length;
   });
   // Take only first 3 into new array
-  let cutStr = strArr.slice(0,3)
+  const cutStr = strArr.slice(0,3)
   // Combine array into single string
-  let combineStr = cutStr.join('')
+  const combineStr = cutStr.join('')
   // Add hashtag infront
   return `#${combineStr}`
 }
 
 console.log(makeHashTag('hash tag string is a hard one'))
+
+
+console.log("---Challenge 10: Return true if empty---")
+function isEmpty(str) {
+  // delete all white space
+  const clearSpace = removeExtraSpaces(str)
+  // const clearSpace = str.replace(/\s+/g, ' ').trim()
+  if (clearSpace == '') {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEmpty('hash tag string is a hard one')) //false
+console.log(isEmpty('')) //empty
+console.log(isEmpty('  ')) //spaces
+console.log(isEmpty(' ')) //tab
