@@ -1,5 +1,9 @@
 # String Library Project
 
+![npm](https://img.shields.io/npm/v/@chrisle26/homework-1-strings?style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/chrismlee26/few2-1-1-strings?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chrismlee26/few2-1-1-strings?style=for-the-badge)
+
 For FEW 2.1 (Advanced Javascript) at Make School. Assignment #1.
 
 Built with Javascript ES6 (Vanilla)

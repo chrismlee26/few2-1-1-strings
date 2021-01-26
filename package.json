@@ -1,12 +1,21 @@
 {
-  "name": "homework-1-strings",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@chrisle26/homework-1-strings",
+  "version": "1.0.1",
+  "description": "For FEW 2.1 (Advanced Javascript) at Make School. Assignment #1.",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrismlee26/few2-1-1-strings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chrismlee26/few2-1-1-strings/issues"
+  },
+  "homepage": "https://github.com/chrismlee26/few2-1-1-strings#readme"
+
 }
