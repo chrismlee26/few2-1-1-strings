@@ -1,6 +1,6 @@
 {
   "name": "@chrisle26/homework-1-strings",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "For FEW 2.1 (Advanced Javascript) at Make School. Assignment #1.",
   "main": "src/index.js",
   "scripts": {

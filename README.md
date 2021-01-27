@@ -24,3 +24,8 @@ A library of reusable code that operates on strings. Strings are one of the most
 # Run
 
 $ node src/index to run program in console
+
+# Updates
+
+1. Added prototype methods
+2. Published to NPM
