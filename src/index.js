@@ -6,6 +6,14 @@ function capitalize(str) {
 
 console.log(capitalize('hello world'))
 
+// Prototype version of Capitalize First
+String.prototype.capitalize = function () {
+  return capitalize(this);
+}
+
+console.log('hello world'.capitalize())
+
+
 
 console.log("---Challenge 2: All Caps---")
 function allCaps(str) {
@@ -13,6 +21,14 @@ function allCaps(str) {
 }
 
 console.log(allCaps("foo bar"));
+
+// Prototype version of All Caps
+String.prototype.allCaps = function () {
+  return allCaps(this);
+}
+
+console.log('foo bar'.allCaps())
+
 
 
 console.log("---Challenge 3: Capitalize Words---")
@@ -26,6 +42,14 @@ function capitalizeWords(str, sep = " ") {
 
 console.log(capitalizeWords("the most foo in bar"));
 
+// Prototype version of Capitalize Words
+String.prototype.capitalizeWords = function () {
+  return capitalizeWords(this);
+}
+
+console.log("the most foo in bar".capitalizeWords())
+
+
 
 console.log("---Challenge 4: Remove Extra Spaces---")
 function removeExtraSpaces(str) {
@@ -37,6 +61,14 @@ function removeExtraSpaces(str) {
 
 console.log(removeExtraSpaces("   Hello    world!   "))
 
+// Prototype version of Fn
+String.prototype.removeExtraSpaces = function () {
+  return removeExtraSpaces(this);
+}
+
+console.log("   Hello    world!   ".removeExtraSpaces())
+
+
 
 console.log("---Challenge 5: Remove Extra Spaces and replace with '-' and lowercase---")
 function kebobCase(str, sep = "-") {
@@ -47,6 +79,14 @@ function kebobCase(str, sep = "-") {
 
 console.log(kebobCase("Hello world foo bar"))
 
+// Prototype version of kebobCase
+String.prototype.kebobCase = function () {
+  return kebobCase(this);
+}
+
+console.log("Hello world foo bar".kebobCase())
+
+
 
 console.log("---Challenge 6: Remove Extra Spaces and replace with '_' and lowercase---")
 function snakeCase(str) {
@@ -55,21 +95,38 @@ function snakeCase(str) {
 
 console.log(snakeCase("Hello world foo bar"))
 
+// Prototype version of snakeCase
+String.prototype.snakeCase = function () {
+  return snakeCase(this);
+}
+
+console.log("Hello world foo bar".snakeCase())
+
+
 
 console.log("---Challenge 7: Make the string camelcase---")
 function camelCase(str) {
-    strList = str.split(' ')
-    newStr = ""
-    for (let i = 0; i < strList.length; i++) {
-      if(i == 0) {
-        newStr += strList[i] 
-      } else {
-        newStr += capitalize(strList[i])
-      }
+  strList = str.split(' ')
+  newStr = ""
+  for (let i = 0; i < strList.length; i++) {
+    if(i == 0) {
+      newStr += strList[i] 
+    } else {
+      newStr += capitalize(strList[i])
     }
-    return newStr
   }
+  return newStr
+}
+
 console.log(camelCase('hello world'))
+
+// Prototype version of camelCase
+String.prototype.camelCase = function () {
+  return camelCase(this);
+}
+
+console.log('hello world'.camelCase())
+
 
 
 console.log("---Challenge 8: Move first character to last---")
@@ -79,6 +136,14 @@ function shiftChar(str) {
 }
 
 console.log(shiftChar('dHello Worl'))
+
+// Prototype version of shift first char to last
+String.prototype.shiftChar = function () {
+  return shiftChar(this);
+}
+
+console.log('dHello Worl'.shiftChar())
+
 
 
 console.log("---Challenge 9: Hash Tag, First letter cap, No Space, 3 Longest Words only---")
@@ -102,6 +167,14 @@ function makeHashTag(str) {
 
 console.log(makeHashTag('hash tag string is a hard one'))
 
+// Prototype version of shift first char to last
+String.prototype.makeHashTag = function () {
+  return makeHashTag(this);
+}
+
+console.log('hash tag string is a hard one'.makeHashTag())
+
+
 
 console.log("---Challenge 10: Return true if empty---")
 function isEmpty(str) {
@@ -119,3 +192,13 @@ console.log(isEmpty('hash tag string is a hard one')) //false
 console.log(isEmpty('')) //empty
 console.log(isEmpty('  ')) //spaces
 console.log(isEmpty(' ')) //tab
+
+// Prototype version of shift first char to last
+String.prototype.isEmpty = function () {
+  return isEmpty(this);
+}
+
+console.log('hash tag string is a hard one'.isEmpty())
+console.log(''.isEmpty()) //empty
+console.log('  '.isEmpty()) //spaces
+console.log(' '.isEmpty()) //tab
