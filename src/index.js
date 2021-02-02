@@ -4,14 +4,14 @@ function capitalize(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
-console.log(capitalize('hello world'))
+// console.log(capitalize('hello world'))
 
 // Prototype version of Capitalize First
 String.prototype.capitalize = function () {
   return capitalize(this);
 }
 
-console.log('hello world'.capitalize())
+// console.log('hello world'.capitalize())
 
 
 
@@ -20,14 +20,14 @@ function allCaps(str) {
   return str.toUpperCase();
 }
 
-console.log(allCaps("foo bar"));
+// console.log(allCaps("foo bar"));
 
 // Prototype version of All Caps
 String.prototype.allCaps = function () {
   return allCaps(this);
 }
 
-console.log('foo bar'.allCaps())
+// console.log('foo bar'.allCaps())
 
 
 
@@ -40,14 +40,14 @@ function capitalizeWords(str, sep = " ") {
   return strArr.join(sep);
 }
 
-console.log(capitalizeWords("the most foo in bar"));
+// console.log(capitalizeWords("the most foo in bar"));
 
 // Prototype version of Capitalize Words
 String.prototype.capitalizeWords = function () {
   return capitalizeWords(this);
 }
 
-console.log("the most foo in bar".capitalizeWords())
+// console.log("the most foo in bar".capitalizeWords())
 
 
 
@@ -59,14 +59,14 @@ function removeExtraSpaces(str) {
   // g: indicated iterative searching throughout the full string
 }
 
-console.log(removeExtraSpaces("   Hello    world!   "))
+// console.log(removeExtraSpaces("   Hello    world!   "))
 
 // Prototype version of Fn
 String.prototype.removeExtraSpaces = function () {
   return removeExtraSpaces(this);
 }
 
-console.log("   Hello    world!   ".removeExtraSpaces())
+// console.log("   Hello    world!   ".removeExtraSpaces())
 
 
 
@@ -77,14 +77,14 @@ function kebobCase(str, sep = "-") {
   return res.toLowerCase();
 }
 
-console.log(kebobCase("Hello world foo bar"))
+// console.log(kebobCase("Hello world foo bar"))
 
 // Prototype version of kebobCase
 String.prototype.kebobCase = function () {
   return kebobCase(this);
 }
 
-console.log("Hello world foo bar".kebobCase())
+// console.log("Hello world foo bar".kebobCase())
 
 
 
@@ -93,14 +93,14 @@ function snakeCase(str) {
   return kebobCase(str, '_')
 }
 
-console.log(snakeCase("Hello world foo bar"))
+// console.log(snakeCase("Hello world foo bar"))
 
 // Prototype version of snakeCase
 String.prototype.snakeCase = function () {
   return snakeCase(this);
 }
 
-console.log("Hello world foo bar".snakeCase())
+// console.log("Hello world foo bar".snakeCase())
 
 
 
@@ -118,14 +118,14 @@ function camelCase(str) {
   return newStr
 }
 
-console.log(camelCase('hello world'))
+// console.log(camelCase('hello world'))
 
 // Prototype version of camelCase
 String.prototype.camelCase = function () {
   return camelCase(this);
 }
 
-console.log('hello world'.camelCase())
+// console.log('hello world'.camelCase())
 
 
 
@@ -135,14 +135,14 @@ function shiftChar(str) {
   return str.slice(1) + firstChar
 }
 
-console.log(shiftChar('dHello Worl'))
+// console.log(shiftChar('dHello Worl'))
 
 // Prototype version of shift first char to last
 String.prototype.shiftChar = function () {
   return shiftChar(this);
 }
 
-console.log('dHello Worl'.shiftChar())
+// console.log('dHello Worl'.shiftChar())
 
 
 
@@ -165,14 +165,14 @@ function makeHashTag(str) {
   return `#${combineStr}`
 }
 
-console.log(makeHashTag('hash tag string is a hard one'))
+// console.log(makeHashTag('hash tag string is a hard one'))
 
 // Prototype version of shift first char to last
 String.prototype.makeHashTag = function () {
   return makeHashTag(this);
 }
 
-console.log('hash tag string is a hard one'.makeHashTag())
+// console.log('hash tag string is a hard one'.makeHashTag())
 
 
 
@@ -188,17 +188,28 @@ function isEmpty(str) {
   }
 }
 
-console.log(isEmpty('hash tag string is a hard one')) //false
-console.log(isEmpty('')) //empty
-console.log(isEmpty('  ')) //spaces
-console.log(isEmpty(' ')) //tab
+// console.log(isEmpty('hash tag string is a hard one')) //false
+// console.log(isEmpty('')) //empty
+// console.log(isEmpty('  ')) //spaces
+// console.log(isEmpty(' ')) //tab
 
 // Prototype version of shift first char to last
 String.prototype.isEmpty = function () {
   return isEmpty(this);
 }
 
-console.log('hash tag string is a hard one'.isEmpty())
-console.log(''.isEmpty()) //empty
-console.log('  '.isEmpty()) //spaces
-console.log(' '.isEmpty()) //tab
+// console.log('hash tag string is a hard one'.isEmpty())
+// console.log(''.isEmpty()) //empty
+// console.log('  '.isEmpty()) //spaces
+// console.log(' '.isEmpty()) //tab
+
+module.exports.capitalize = capitalize
+module.exports.allCaps = allCaps
+module.exports.capitalizeWords = capitalizeWords
+module.exports.removeExtraSpaces = removeExtraSpaces
+module.exports.kebobCase = kebobCase
+module.exports.snakeCase = snakeCase
+module.exports.camelCase = camelCase
+module.exports.shiftChar = shiftChar
+module.exports.makeHashTag = makeHashTag
+module.exports.isEmpty = isEmpty
