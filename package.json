@@ -4,7 +4,8 @@
   "description": "For FEW 2.1 (Advanced Javascript) at Make School. Assignment #1.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/chrismlee26/few2-1-1-strings#readme",
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "jest": "^26.6.3"
   }
 }
