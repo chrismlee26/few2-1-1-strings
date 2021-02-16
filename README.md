@@ -3,6 +3,7 @@
 ![npm](https://img.shields.io/npm/v/@chrisle26/homework-1-strings?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/chrismlee26/few2-1-1-strings?style=for-the-badge)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/chrismlee26/few2-1-1-strings?style=for-the-badge)
+![Build Status](https://travis-ci.com/chrismlee26/few2-1-1-strings.svg?branch=master)](https://travis-ci.com/chrismlee26/few2-1-1-strings)
 
 For FEW 2.1 (Advanced Javascript) at Make School. Assignment #1. v1.2.4
 
